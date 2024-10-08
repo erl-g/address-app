@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.erl.app.About.AboutController">
+   <top>
+      <StackPane prefHeight="407.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox prefHeight="163.0" prefWidth="589.0">
+                     <children>
+                        <Label prefHeight="29.0" prefWidth="151.0" styleClass="label-bright" text="About Author">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="187.0">
+                           <image>
+                              <Image url="@../../../../../../../../../../../Downloads/mario.png" />
+                           </image>
+                        </ImageView>
+                        <GridPane prefHeight="180.0" prefWidth="324.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="324.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.0" minWidth="0.0" prefWidth="0.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label styleClass="label-bright" text="Name:" />
+                              <Label fx:id="namLabel" styleClass="label-bright" text="Cherry Anne Z. Erlandez" GridPane.rowIndex="1" />
+                              <Label styleClass="label-bright" text="Address" GridPane.rowIndex="2" />
+                              <Label fx:id="addrLabel" styleClass="label-bright" text="Natubgan, Kananga Leyte" GridPane.rowIndex="3" />
+                           </children>
+                           <padding>
+                              <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                           </padding>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="126.0" prefWidth="600.0">
+                     <children>
+                        <Label styleClass="label-bright" text="Description:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Region prefHeight="112.0" prefWidth="66.0" />
+                        <Label fx:id="descriptionLabel" styleClass="label-bright" text="&quot;Completed profiles and a list of the type of things&#10; that may help you to best describe youryself&quot;">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label styleClass="label-bright" text="Contact Us" textFill="#110606">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="label-bright" text="Email" GridPane.rowIndex="1" />
+                        <Label styleClass="label-bright" text="Contact Number" GridPane.rowIndex="2" />
+                        <Label fx:id="email" styleClass="label-bright" text="cherryanneerlandez96@gmail.com" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="contactLabel" styleClass="label-bright" text="09269797129" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </top>
+   <center>
+      <Label text="Label" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
